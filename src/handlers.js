@@ -16,7 +16,7 @@ module.exports = {
   },
   'RandomCharacter': function () {
     const char = characterGenerator()
-    const speechOutput = char.name + ' the ' + char.aspects.bioform
+    const speechOutput = '<emphasis level="strong">' + char.name + '</emphasis> the ' + char.aspects.bioform
     this.emit(':tellWithCard', speechOutput, this.t('SKILL_NAME'))
   },
   'AMAZON.HelpIntent': function () {
