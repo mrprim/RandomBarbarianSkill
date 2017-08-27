@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "build": "gulp zip bump",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,7 +24,12 @@
   },
   "homepage": "https://github.com/mrprim/SirGeoSkill#readme",
   "dependencies": {
-    "alexa-sdk": "^1.0.6",
-    "lodash": "^4.17.4"
+    "alexa-sdk": "^1.0.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.7.0",
+    "gulp-tap": "^1.0.1",
+    "gulp-zip": "^4.0.0"
   }
 }

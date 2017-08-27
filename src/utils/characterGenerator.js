@@ -1,4 +1,4 @@
-const sample = require('lodash/sample')
+const sample = require('../utils/sample')
 const nameGenerator = require('./nameGenerator').nameGenerator
 const roll4dF = require('./dice').roll4dF
 
