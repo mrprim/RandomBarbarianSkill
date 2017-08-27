@@ -1,18 +1,18 @@
-const sample = require('../utils/sample')
-const nameGenerator = require('./nameGenerator').nameGenerator
-const roll4dF = require('./dice').roll4dF
+const sample = require('../../utils/sample')
+const nameGenerator = require('../../utils/nameGenerator').nameGenerator
+const roll4dF = require('../../utils/dice').roll4dF
 
-const getFateChartValue = require('../data/layout.fate').getFateChartValue
-const getSynonym = require('../data/approaches.thesaurus').getSynonym
-const getClass = require('../data/classes').getClass
+const getFateChartValue = require('../../data/layout.fate').getFateChartValue
+const getSynonym = require('../../data/approaches.thesaurus').getSynonym
+const getClass = require('../../data/classes').getClass
 
-const bioforms = require('../data/bioforms.fate')
-const bugsAndFish = require('../data/bugsAndFish.fate')
-const herpsAndDinos = require('../data/herpsAndDinos.fate')
-const birdsAndMammals = require('../data/birdsAndMammals.fate')
-const powers = require('../data/powers.fate')
-const weapons = require('../data/weapons.fate')
-const adaptations = require('../data/adaptations.fate')
+const bioforms = require('../../data/bioforms.fate')
+const bugsAndFish = require('../../data/bugsAndFish.fate')
+const herpsAndDinos = require('../../data/herpsAndDinos.fate')
+const birdsAndMammals = require('../../data/birdsAndMammals.fate')
+const powers = require('../../data/powers.fate')
+const weapons = require('../../data/weapons.fate')
+const adaptations = require('../../data/adaptations.fate')
 const animalCharts = [bugsAndFish, herpsAndDinos, birdsAndMammals]
 const stuntCharts = [powers, weapons, adaptations]
 

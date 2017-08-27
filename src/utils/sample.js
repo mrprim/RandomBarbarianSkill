@@ -7,7 +7,7 @@ const sample = (x = []) => {
 
   const l = x.length
   const i = dice.roll(l)
-  return x[i]
+  return x[i - 1]
 }
 
 module.exports = sample

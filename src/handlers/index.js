@@ -1,4 +1,4 @@
-const characterGenerator = require('./utils/characterGenerator')
+const generators = require('../generators')
 
 module.exports = {
   'LaunchRequest': function () {
@@ -15,7 +15,7 @@ module.exports = {
     this.emit(':tellWithCard', speechOutput, this.t('SKILL_NAME'))
   },
   'RandomCharacter': function () {
-    const char = characterGenerator()
+    const char = generators.characters.umdaar()
     const speechOutput = '<emphasis level="strong">' + char.name + '</emphasis> the ' + char.aspects.bioform
     this.emit(':tellWithCard', speechOutput, this.t('SKILL_NAME'), speechOutput)
   },
