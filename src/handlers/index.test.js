@@ -24,6 +24,10 @@ const boilerplate = handler => {
 }
 
 describe('handlers', () => {
+  describe('Launch', () => {
+    boilerplate('Launch')
+  })
+
   describe('RandomCharacterIntent', () => {
     boilerplate('RandomCharacterIntent')
   })

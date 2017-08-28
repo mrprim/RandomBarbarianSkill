@@ -1,24 +1,20 @@
-const generators = require('../generators')
+const RandomCharacter = require('./RandomCharacter')
 
 module.exports = {
   'LaunchRequest': function () {
-    this.emit('PartyTime')
+    this.emit('Launch')
   },
   'PartyTimeIntent': function () {
-    this.emit('PartyTime')
+    this.emit('Launch')
   },
   'RandomCharacterIntent': function () {
     this.emit('RandomCharacter')
   },
-  'PartyTime': function () {
-    const speechOutput = this.t('PARTY_TIME_MESSAGE')
-    this.emit(':tellWithCard', speechOutput, this.t('SKILL_NAME'))
+  'Launch': function () {
+    const speechOutput = this.t('LAUNCH_PROMPT')
+    this.emit(':ask', speechOutput)
   },
-  'RandomCharacter': function () {
-    const char = generators.characters.umdaar()
-    const speechOutput = '<emphasis level="strong">' + char.name + '</emphasis> the ' + char.aspects.bioform
-    this.emit(':tellWithCard', speechOutput, this.t('SKILL_NAME'), speechOutput)
-  },
+  'RandomCharacter': RandomCharacter,
   'AMAZON.HelpIntent': function () {
     const speechOutput = this.t('HELP_MESSAGE')
     const reprompt = this.t('HELP_MESSAGE')

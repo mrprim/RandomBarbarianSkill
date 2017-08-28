@@ -1,4 +1,4 @@
-const en = require('en')
+const en = require('./en')
 
 module.exports = {
   en: en
