@@ -6,14 +6,29 @@ const it = mocha.it
 
 const handlers = require('./index')
 
+const boilerplate = handler => {
+  it('is a function', function () {
+    expect(typeof handlers[handler]).toEqual('function')
+  })
+
+  it('emits an action', function () {
+    const context = {
+      t: x => x,
+      emit: x => x
+    }
+    const emitSpy = expect.spyOn(context, 'emit')
+    handlers[handler].call(context)
+
+    expect(emitSpy).toHaveBeenCalled()
+  })
+}
+
 describe('handlers', () => {
+  describe('RandomCharacterIntent', () => {
+    boilerplate('RandomCharacterIntent')
+  })
+
   describe('RandomCharacter', () => {
-    it('is a handler', function () {
-      const self = {
-        t: (x) => console.log('t:' + x),
-        emit: (x) => console.log('emit:' + x)
-      }
-      handlers.RandomCharacter.bind(self)()
-    })
+    boilerplate('RandomCharacter')
   })
 })

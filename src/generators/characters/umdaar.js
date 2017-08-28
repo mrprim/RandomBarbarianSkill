@@ -1,5 +1,5 @@
 const sample = require('../../utils/sample')
-const nameGenerator = require('../../utils/nameGenerator').nameGenerator
+const nameGenerator = require('../names').barbarian
 const roll4dF = require('../../utils/dice').roll4dF
 
 const getFateChartValue = require('../../data/layout.fate').getFateChartValue
