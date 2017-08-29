@@ -1,4 +1,4 @@
-const generators = require('../generators')
+const generators = require('random-rpg-stuff')
 const emphasize = require('../utils/speech').emphasize
 
 module.exports = function () {

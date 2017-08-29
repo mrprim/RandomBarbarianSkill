@@ -1,11 +1,11 @@
 {
   "name": "sir-geo-alexa-skill",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "An Alexa Skill.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "gulp zip bump",
+    "build": "npm version patch && gulp zip",
     "test": "mocha --recursive \"./**/*.test.js\""
   },
   "repository": {
@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/mrprim/SirGeoSkill#readme",
   "dependencies": {
-    "alexa-sdk": "^1.0.6"
+    "alexa-sdk": "^1.0.6",
+    "random-rpg-stuff": "^0.0.12"
   },
   "devDependencies": {
     "expect": "^1.20.2",
