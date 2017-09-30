@@ -1,6 +1,6 @@
 {
   "name": "random-barbarian-alexa-skill",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "An Alexa Skill for generating random sci-fi barbarians.",
   "main": "index.js",
   "scripts": {
