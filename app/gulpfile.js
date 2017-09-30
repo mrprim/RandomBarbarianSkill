@@ -13,8 +13,8 @@ gulp.task('bump', () => gulp.src(['./package.json'])
 )
 
 gulp.task('zip', () => {
-  const version = require('./package.json').version
+  const pkg = require('./package.json')
   return gulp.src('./**')
-    .pipe(zip('random-gen-skill-' + version + '.zip'))
+    .pipe(zip(pkg.name + '-' + pkg.version + '.zip'))
     .pipe(gulp.dest('../dist'))
 })

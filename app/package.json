@@ -1,7 +1,7 @@
 {
-  "name": "sir-geo-alexa-skill",
-  "version": "1.0.13",
-  "description": "An Alexa Skill.",
+  "name": "random-barbarian-alexa-skill",
+  "version": "1.0.7",
+  "description": "An Alexa Skill for generating random sci-fi barbarians.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrprim/SirGeoSkill.git"
+    "url": "git+https://github.com/mrprim/RandomBarbarianSkill.git"
   },
   "keywords": [
     "alexa",
@@ -20,9 +20,9 @@
   "author": "Sergio Rodriguez",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mrprim/SirGeoSkill/issues"
+    "url": "https://github.com/mrprim/RandomBarbarianSkill/issues"
   },
-  "homepage": "https://github.com/mrprim/SirGeoSkill#readme",
+  "homepage": "https://github.com/mrprim/RandomBarbarianSkill#readme",
   "dependencies": {
     "alexa-sdk": "^1.0.6",
     "random-rpg-stuff": "^0.0.20"

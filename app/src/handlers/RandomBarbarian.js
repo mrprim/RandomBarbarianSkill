@@ -5,5 +5,5 @@ module.exports = function () {
 
   const msg = char.toString()
 
-  this.emit(':tellWithCard', msg, this.t('RANDOM_CHARACTER'), msg)
+  this.emit(':tellWithCard', msg, this.t('BARBARIAN_OATH'), msg)
 }
