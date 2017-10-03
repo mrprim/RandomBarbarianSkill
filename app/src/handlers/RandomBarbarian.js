@@ -4,9 +4,9 @@ module.exports = function () {
   const char = generators.characters.umdaar()
   const oath = generators.misc.oath()
 
-  const msg = oath + ' ' + this.t('IT_IS') + ' ' + char.toString() + '!'
+  const speech = '<emphasis level="strong">' + oath + '</emphasis> ' + this.t('IT_IS') + ' ' + char.toString('ssml') + '!'
+  const card = oath + ' ' + this.t('IT_IS') + ' ' + char.toString() + '!'
 
-  console.log(msg)
-
-  this.emit(':tellWithCard', msg, this.t('SKILL_NAME'), msg)
+  console.log(card)
+  this.emit(':tellWithCard', speech, this.t('SKILL_NAME'), card)
 }

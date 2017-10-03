@@ -25,7 +25,7 @@
   "homepage": "https://github.com/mrprim/RandomBarbarianSkill#readme",
   "dependencies": {
     "alexa-sdk": "^1.0.6",
-    "random-rpg-stuff": "^0.0.21"
+    "random-rpg-stuff": "^0.0.23"
   },
   "devDependencies": {
     "expect": "^1.20.2",
